@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <h1>Edit Work Place</h1>
+    <form method="post" action="/works/<%=work_place.id%>?_method=PATCH">
+        <textarea name="work_place" id="" cols="10" rows="4">
+            <%= work_place.work_place%>
+        </textarea>
+        <br>
+        <button>Update Work Place</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show work place</title>
+</head>
+<body>
+    <h1>work id : <%= work_place.id %> </h1>
+    <h2><%= work_place.work_place %> - <%= work_place.username %></h2>
+    <button><a href="/works">Back to Homepage</a></button>
+    <button><a href="/works/<%=work_place.id%>/edit">Edit work_place</a></button>
+    <form method="post" action="/works/<%=work_place.id%>?_method=DELETE">
+        <button>DELETE</button>
+    </form>
+</body>
+</html>

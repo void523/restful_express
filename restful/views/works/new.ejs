@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new Work Place</title>
+</head>
+<body>
+    <h1>Enter new Work</h1>
+    <form action="/works" method="post">
+            <section>
+                <label for="username">Enter your username</label>
+                <input id="username" type="text" placeholder="username" name="username">
+            </section>
+            <section>
+                <label for="work_place">Work Place:[Indoor/Outdoor]</label>
+                <br>
+                <textarea name="work_place" id="work_place" cols="10" rows="4"></textarea>
+            </section>
+            <button>Submit</button>
+    </form>
+    <button><a href="/works">Homepage</a></button>
+</body>
+</html>
